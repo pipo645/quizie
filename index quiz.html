@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juist/Onjuist Vragen over de Heup</title>
+    <link rel="stylesheet" href="qiuz.css">
+    <style>
+        /* Basisstijl voor de body */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://static.vecteezy.com/ti/gratis-vector/p1/7681609-infographic-set-voor-fysiotherapie-en-revalidatie-vector.jpg'); /* Achtergrondafbeelding */
+            background-size: cover; /* Zorgt ervoor dat de afbeelding de hele achtergrond bedekt */
+            background-position: center; /* Centraal uitlijnen van de achtergrond */
+            margin: 0;
+            padding: 20px;
+            color: #333; /* Tekstkleur */
+        }
+
+        /* Stijl voor de quiz container */
+        #quiz {
+            max-width: 600px; /* Maximale breedte van de quiz */
+            margin: auto; /* Centraal uitlijnen */
+            background: rgba(255, 255, 255, 0.8); /* Witte achtergrond met enige doorzichtigheid */
+            padding: 20px; /* Ruimte binnen de box */
+            border-radius: 10px; /* Ronde hoeken */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Schaduw effect */
+        }
+
+        /* Enkele stijlen voor de feedback */
+        .correct { color: green; }
+        .incorrect { color: red; }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Juist/Onjuist Vragen over de Heup</h1>
+
+    <form id="quiz">
+        <h3>1. De heup bestaat uit drie belangrijke botten: het ilium, ischium en os pubis.</h3>
+        <input type="radio" id="q1true" name="q1" value="juist">
+        <label for="q1true">Juist</label><br>
+        <input type="radio" id="q1false" name="q1" value="onjuist">
+        <label for="q1false">Onjuist</label><br>
+
+        <h3>2. De origo van de musculus iliopsoas bevindt zich aan de binnenzijde van het ilium.</h3>
+        <input type="radio" id="q2true" name="q2" value="juist">
+        <label for="q2true">Juist</label><br>
+        <input type="radio" id="q2false" name="q2" value="onjuist">
+        <label for="q2false">Onjuist</label><br>
+
+        <h3>3. De musculus gluteus maximus heeft als functie het extensie van de heup.</h3>
+        <input type="radio" id="q3true" name="q3" value="juist">
+        <label for="q3true">Juist</label><br>
+        <input type="radio" id="q3false" name="q3" value="onjuist">
+        <label for="q3false">Onjuist</label><br>
+        
+        <h3>4. De insertie van de musculus adductor longus bevindt zich aan de linea aspera van het femur.</h3>
+        <input type="radio" id="q4true" name="q4" value="juist">
+        <label for="q4true">Juist</label><br>
+        <input type="radio" id="q4false" name="q4" value="onjuist">
+        <label for="q4false">Onjuist</label><br>
+        
+        <h3>5. Het femur is het langste bot in het menselijk lichaam.</h3>
+        <input type="radio" id="q5true" name="q5" value="juist">
+        <label for="q5true">Juist</label><br>
+        <input type="radio" id="q5false" name="q5" value="onjuist">
+        <label for="q5false">Onjuist</label><br>
+        
+        <h3>6. De musculus tensor fasciae latae helpt bij het flexeren en abduceren van de heup.</h3>
+        <input type="radio" id="q6true" name="q6" value="juist">
+        <label for="q6true">Juist</label><br>
+        <input type="radio" id="q6false" name="q6" value="onjuist">
+        <label for="q6false">Onjuist</label><br>
+        
+        <h3>7. De musculus piriformis bevindt zich aan de achterzijde van de heup en zorgt voor endorotatie.</h3>
+        <input type="radio" id="q7true" name="q7" value="juist">
+        <label for="q7true">Juist</label><br>
+        <input type="radio" id="q7false" name="q7" value="onjuist">
+        <label for="q7false">Onjuist</label><br>
+        
+        <h3>8. Het acetabulum is de kom van het heupgewricht.</h3>
+        <input type="radio" id="q8true" name="q8" value="juist">
+        <label for="q8true">Juist</label><br>
+        <input type="radio" id="q8false" name="q8" value="onjuist">
+        <label for="q8false">Onjuist</label><br>
+        
+        <h3>9. De musculus gluteus medius zorgt voornamelijk voor adductie van de heup.</h3>
+        <input type="radio" id="q9true" name="q9" value="juist">
+        <label for="q9true">Juist</label><br>
+        <input type="radio" id="q9false" name="q9" value="onjuist">
+        <label for="q9false">Onjuist</label><br>
+        
+        <h3>10. De musculus rectus femoris helpt bij het strekken van de knie en buigen van de heup.</h3>
+        <input type="radio" id="q10true" name="q10" value="juist">
+        <label for="q10true">Juist</label><br>
+        <input type="radio" id="q10false" name="q10" value="onjuist">
+        <label for="q10false">Onjuist</label><br>
+        
+        <h3>11. De musculus sartorius is de kortste spier van het lichaam.</h3>
+        <input type="radio" id="q11true" name="q11" value="juist">
+        <label for="q11true">Juist</label><br>
+        <input type="radio" id="q11false" name="q11" value="onjuist">
+        <label for="q11false">Onjuist</label><br>
+        
+        <h3>12. Het bekken is verbonden met de wervelkolom door het sacrum.</h3>
+        <input type="radio" id="q12true" name="q12" value="juist">
+        <label for="q12true">Juist</label><br>
+        <input type="radio" id="q12false" name="q12" value="onjuist">
+        <label for="q12false">Onjuist</label><br>
+        
+        <h3>13. De musculus gracilis loopt over het heupgewricht en zorgt voor abductie van de heup.</h3>
+        <input type="radio" id="q13true" name="q13" value="juist">
+        <label for="q13true">Juist</label><br>
+        <input type="radio" id="q13false" name="q13" value="onjuist">
+        <label for="q13false">Onjuist</label><br>
+        
+        <h3>14. De musculus iliopsoas is de belangrijkste buigspier van de heup.</h3>
+        <input type="radio" id="q14true" name="q14" value="juist">
+        <label for="q14true">Juist</label><br>
+        <input type="radio" id="q14false" name="q14" value="onjuist">
+        <label for="q14false">Onjuist</label><br>
+        
+        <h3>15. De musculus gluteus minimus heeft als functie de heup te adduceren en te endoroteren.</h3>
+        <input type="radio" id="q15true" name="q15" value="juist">
+        <label for="q15true">Juist</label><br>
+        <input type="radio" id="q15false" name="q15" value="onjuist">
+        <label for="q15false">Onjuist</label><br>
+        
+        <h3>16. Het ligamentum teres is een belangrijke stabilisator van het heupgewricht.</h3>
+        <input type="radio" id="q16true" name="q16" value="juist">
+        <label for="q16true">Juist</label><br>
+        <input type="radio" id="q16false" name="q16" value="onjuist">
+        <label for="q16false">Onjuist</label><br>
+        
+        <h3>17. De musculus adductor brevis helpt bij het extensie van de heup.</h3>
+        <input type="radio" id="q17true" name="q17" value="juist">
+        <label for="q17true">Juist</label><br>
+        <input type="radio" id="q17false" name="q17" value="onjuist">
+        <label for="q17false">Onjuist</label><br>
+        
+        <h3>18. Het foramen obturatum bevindt zich in het bekken tussen de pubis en ischium.</h3>
+        <input type="radio" id="q18true" name="q18" value="juist">
+        <label for="q18true">Juist</label><br>
+        <input type="radio" id="q18false" name="q18" value="onjuist">
+        <label for="q18false">Onjuist</label><br>
+        
+        <h3>19. De musculus pectineus ligt aan de mediale zijde van de heup en helpt bij adductie.</h3>
+        <input type="radio" id="q19true" name="q19" value="juist">
+        <label for="q19true">Juist</label><br>
+        <input type="radio" id="q19false" name="q19" value="onjuist">
+        <label for="q19false">Onjuist</label><br>
+        
+        <h3>20. Het sacrum vormt het achterste deel van het bekken en is een onbeweeglijk gewricht.</h3>
+        <input type="radio" id="q20true" name="q20" value="juist">
+        <label for="q20true">Juist</label><br>
+        <input type="radio" id="q20false" name="q20" value="onjuist">
+        <label for="q20false">Onjuist</label><br>
+        
+        <h3>21. De origo van de musculus rectus femoris bevindt zich aan de spina iliaca anterior superior (SIAS).</h3>
+        <input type="radio" id="q21true" name="q21" value="juist">
+        <label for="q21true">Juist</label><br>
+        <input type="radio" id="q21false" name="q21" value="onjuist">
+        <label for="q21false">Onjuist</label><br>
+        
+        <h3>22. De musculus gluteus maximus is de belangrijkste spier voor abductie van de heup.</h3>
+        <input type="radio" id="q22true" name="q22" value="juist">
+        <label for="q22true">Juist</label><br>
+        <input type="radio" id="q22false" name="q22" value="onjuist">
+        <label for="q22false">Onjuist</label><br>
+        
+        <h3>23. Het bekken is samengesteld uit het heiligbeen en twee bekkenbotten.</h3>
+        <input type="radio" id="q23true" name="q23" value="juist">
+        <label for="q23true">Juist</label><br>
+        <input type="radio" id="q23false" name="q23" value="onjuist">
+        <label for="q23false">Onjuist</label><br>
+        
+        <h3>24. De musculus iliopsoas is betrokken bij de endorotatie van de heup.</h3>
+        <input type="radio" id="q24true" name="q24" value="juist">
+        <label for="q24true">Juist</label><br>
+        <input type="radio" id="q24false" name="q24" value="onjuist">
+        <label for="q24false">Onjuist</label><br>
+        
+        <h3>25. Het ligamentum inguinale strekt zich uit van de spina iliaca anterior superior naar de tuberculum pubicum.</h3>
+        <input type="radio" id="q25true" name="q25" value="juist">
+        <label for="q25true">Juist</label><br>
+        <input type="radio" id="q25false" name="q25" value="onjuist">
+        <label for="q25false">Onjuist</label><br>
+        
+        <h3>26. De musculus gemellus superior en inferior zorgen voor exorotatie van de heup.</h3>
+        <input type="radio" id="q26true" name="q26" value="juist">
+        <label for="q26true">Juist</label><br>
+        <input type="radio" id="q26false" name="q26" value="onjuist">
+        <label for="q26false">Onjuist</label><br>
+        
+        <h3>27. Het os pubis ligt aan de laterale zijde van het bekken.</h3>
+        <input type="radio" id="q27true" name="q27" value="juist">
+        <label for="q27true">Juist</label><br>
+        <input type="radio" id="q27false" name="q27" value="onjuist">
+        <label for="q27false">Onjuist</label><br>
+        
+        <h3>28. De origo van de musculus gluteus medius bevindt zich op het os ilium.</h3>
+        <input type="radio" id="q28true" name="q28" value="juist">
+        <label for="q28true">Juist</label><br>
+        <input type="radio" id="q28false" name="q28" value="onjuist">
+        <label for="q28false">Onjuist</label><br>
+        
+        <h3>29. De musculus iliacus helpt bij het extensie van de heup.</h3>
+        <input type="radio" id="q29true" name="q29" value="juist">
+        <label for="q29true">Juist</label><br>
+        <input type="radio" id="q29false" name="q29" value="onjuist">
+        <label for="q29false">Onjuist</label><br>
+        
+        <h3>30. De musculus obturatorius externus helpt bij de exorotatie van de heup.</h3>
+        <input type="radio" id="q30true" name="q30" value="juist">
+        <label for="q30true">Juist</label><br>
+        <input type="radio" id="q30false" name="q30" value="onjuist">
+        <label for="q30false">Onjuist</label><br>
+
+        <input type="submit" value="Verstuur">
+    </form>
+
+    <div id="results"></div>
+
+    <script>
+        document.getElementById('quiz').onsubmit = function(event) {
+            event.preventDefault(); // Voorkomt dat de pagina herlaadt
+
+            // Juiste antwoorden
+            const answers = {
+                q1: "juist",
+                q2: "onjuist",
+                q3: "juist",
+                q4: "juist",
+                q5: "juist",
+                q6: "juist",
+                q7: "juist",
+                q8: "juist",
+                q9: "onjuist",
+                q10: "juist",
+                q11: "onjuist",
+                q12: "juist",
+                q13: "onjuist",
+                q14: "juist",
+                q15: "juist",
+                q16: "onjuist",
+                q17: "onjuist",
+                q18: "juist",
+                q19: "juist",
+                q20: "juist",
+                q21: "juist",
+                q22: "onjuist",
+                q23: "juist",
+                q24: "onjuist",
+                q25: "juist",
+                q26: "juist",
+                q27: "onjuist",
+                q28: "juist",
+                q29: "onjuist",
+                q30: "juist",
+            };
+
+            let resultsHtml = '<h2>Resultaten:</h2>';
+            let score = 0;
+
+            // Loop door de vragen en controleer de antwoorden
+            for (let question in answers) {
+                const selected = document.querySelector(`input[name="${question}"]:checked`);
+                var _question = question.substring(1);
+                
+                if (selected) {
+                    const answer = selected.value;
+                    if (answer === answers[question]) {
+                        resultsHtml += `<p class="correct">Vraag ${_question}: Correct!</p>`;
+                        score++;
+                    } else {
+                        resultsHtml += `<p class="incorrect">Vraag ${_question}: Onjuist. Het juiste antwoord is "${answers[question]}".</p>`;
+                    }
+                } else {
+                    resultsHtml += `<p class="incorrect">Vraag ${_question}: Geen antwoord gegeven.</p>`;
+                }
+            }
+
+            resultsHtml += `<p>Je score is ${score} van ${Object.keys(answers).length}.</p>`;
+            document.getElementById('results').innerHTML = resultsHtml;
+        };
+    </script>
+</body>
+</html>
